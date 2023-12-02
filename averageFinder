@@ -1,0 +1,20 @@
+const num = [100, 100, 100, 80, 80]; //static Inputs
+
+
+// Common function For calculating The Total 
+  const getTotal = val => {
+    let total = 0;
+    for (const value of val) {
+      total += value;
+    }
+    return total;
+  };
+
+// calculating the average Function 
+  const calculateAverage = num => {
+    const total = getTotal(num);
+    return total / num.length;
+  };
+
+  const average = calculateAverage(num);
+  console.log(average); // outPut
